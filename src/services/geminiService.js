@@ -47,7 +47,7 @@ export async function askCompanion({ destination, history, question }) {
       generationConfig: { temperature: 0.7, maxOutputTokens: 300 },
     });
     return text.trim();
-  } catch (err) {
+  } catch {
     return localChatFallback(destination, question);
   }
 }
@@ -115,7 +115,7 @@ Each day should have 4-6 activities spanning morning to evening. Keep descriptio
     const parsed = JSON.parse(cleaned);
     if (!parsed?.days?.length) throw new Error('Malformed itinerary');
     return parsed.days;
-  } catch (err) {
+  } catch {
     return localItineraryFallback({ destination, days, style });
   }
 }

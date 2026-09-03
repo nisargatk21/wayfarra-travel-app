@@ -26,7 +26,7 @@ export async function reverseGeocode({ lat, lng }) {
     const place = data?.results?.[0];
     if (!place) return null;
     return place.admin1 ? `${place.name}, ${place.admin1}` : place.name;
-  } catch (err) {
+  } catch {
     return null;
   }
 }
@@ -43,7 +43,7 @@ export async function searchLocation(query) {
       lat: r.latitude,
       lng: r.longitude,
     }));
-  } catch (err) {
+  } catch {
     return [];
   }
 }

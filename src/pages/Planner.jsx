@@ -45,7 +45,7 @@ export default function Planner() {
     try {
       const result = await generateItinerary({ destination, days, style });
       setItinerary(result);
-    } catch (err) {
+    } catch {
       setError(true);
     } finally {
       setLoading(false);

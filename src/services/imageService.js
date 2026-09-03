@@ -54,7 +54,7 @@ export async function getImage(query, fallbackId, opts = {}) {
         return url;
       }
     }
-  } catch (err) {
+  } catch {
     // Silently degrade to the fallback image — never break the layout.
   }
 

@@ -6,6 +6,8 @@ WANDER is a premium, editorial travel web app: explore destinations, read a desi
 page per place, check live weather, talk to an AI travel companion, and generate a structured,
 day-by-day itinerary — all in a restrained, magazine-style visual language.
 
+**Live app:** https://wayfarra-travel-app.vercel.app
+
 ---
 
 ## 1. Project overview
@@ -16,7 +18,7 @@ itineraries are all wired up and functional. Every integration that needs a paid
 gracefully to a well-designed fallback state (or a local demo generator) when the key isn't
 present, so the app is fully usable — including the "AI" features — with zero configuration.
 
-## 2. Features
+## 2. Features completed
 
 - **Home** — cinematic hero (video background with an animated image fallback), featured
   destinations, and a call to action into the itinerary planner.
@@ -32,7 +34,21 @@ present, so the app is fully usable — including the "AI" features — with zer
 - Loading, empty, and error states designed specifically for each feature (weather, images, AI
   chat, itinerary generation, search).
 
-## 3. Tech stack
+## 3. Screenshots
+
+| Home | Explore |
+|------|---------|
+| ![Home](./screenshots/home.png) | ![Explore](./screenshots/explore.png) |
+
+| Destination + Weather | Travel Companion |
+|------------------------|-------------------|
+| ![Weather](./screenshots/weather.png) | ![Companion](./screenshots/companion.png) |
+
+| Itinerary Planner |
+|------------------|
+| ![Planner](./screenshots/planner.png) |
+
+## 4. Tech stack
 
 | Layer          | Choice                                   |
 |----------------|-------------------------------------------|

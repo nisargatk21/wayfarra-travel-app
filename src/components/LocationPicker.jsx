@@ -11,10 +11,10 @@ export default function LocationPicker({ status, place, onDetect, onManualSelect
   const [results, setResults] = useState([]);
   const debounced = useDebounce(query, 350);
   const [searching, setSearching] = useState(false);
+  const visibleResults = debounced.trim().length < 2 ? [] : results;
 
   useEffect(() => {
     if (debounced.trim().length < 2) {
-      setResults([]);
       return;
     }
     let active = true;
@@ -84,14 +84,14 @@ export default function LocationPicker({ status, place, onDetect, onManualSelect
         </div>
 
         <AnimatePresence>
-          {results.length > 0 && (
+          {visibleResults.length > 0 && (
             <motion.ul
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className="mt-2 max-h-48 overflow-y-auto"
             >
-              {results.map((r) => (
+              {visibleResults.map((r) => (
                 <li key={`${r.name}-${r.lat}`}>
                   <button
                     onClick={() => onManualSelect(r)}

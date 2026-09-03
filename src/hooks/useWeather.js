@@ -7,7 +7,6 @@ export function useWeather(coordinates) {
 
   const load = useCallback(async () => {
     if (!coordinates) return;
-    setStatus(WEATHER_STATUS.LOADING);
     try {
       const data = await fetchWeather(coordinates);
       setWeather(data);
@@ -21,5 +20,10 @@ export function useWeather(coordinates) {
     load();
   }, [load]);
 
-  return { status, weather, retry: load };
+  const retry = useCallback(() => {
+    setStatus(WEATHER_STATUS.LOADING);
+    return load();
+  }, [load]);
+
+  return { status, weather, retry };
 }

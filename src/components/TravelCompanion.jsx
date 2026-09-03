@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { MessageCircle, X, Send, Compass } from 'lucide-react';
+import { X, Send, Compass } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ChatMessage from './ChatMessage';
 import { TypingIndicator } from './LoadingState';
@@ -37,7 +37,7 @@ export default function TravelCompanion({ destination }) {
     try {
       const reply = await askCompanion({ destination, history: messages, question: text });
       setMessages([...nextMessages, { role: 'assistant', content: reply }]);
-    } catch (err) {
+    } catch {
       setError(true);
     } finally {
       setLoading(false);
