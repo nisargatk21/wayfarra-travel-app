@@ -25,17 +25,30 @@ export default function SmartImage({ query, fallbackId, alt, className = '', img
       {!loaded && (
         <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-line/70 to-stone/20" aria-hidden="true" />
       )}
-      <img
-        src={errored ? getFallbackImage(fallbackId) : src}
-        alt={alt}
-        width={800}
-        height={1000}
-        loading={eager ? 'eager' : 'lazy'}
-        onLoad={() => setLoaded(true)}
-        onError={() => setErrored(true)}
-        className={`w-full h-full object-cover transition-opacity duration-700 ${loaded ? 'opacity-100' : 'opacity-0'} ${imgClassName}`}
-        {...rest}
-      />
+      {errored ? (
+        <div
+          role="img"
+          aria-label={alt}
+          className="flex h-full w-full items-end bg-charcoal px-5 py-5 text-ivory"
+        >
+          <span className="font-display text-xl leading-tight">{alt}</span>
+        </div>
+      ) : (
+        <img
+          src={src}
+          alt={alt}
+          width={800}
+          height={1000}
+          loading={eager ? 'eager' : 'lazy'}
+          onLoad={() => setLoaded(true)}
+          onError={() => {
+            setErrored(true);
+            setLoaded(true);
+          }}
+          className={`w-full h-full object-cover transition-opacity duration-700 ${loaded ? 'opacity-100' : 'opacity-0'} ${imgClassName}`}
+          {...rest}
+        />
+      )}
     </div>
   );
 }
