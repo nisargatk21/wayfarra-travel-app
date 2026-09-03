@@ -16,7 +16,7 @@ export default function DestinationCard({ destination, size = 'small' }) {
     >
       <SmartImage
         query={destination.imageQuery}
-        fallbackId={destination.imageId}
+        fallbackId={destination.exploreImageId ?? destination.imageId}
         alt={`${destination.name}, ${destination.country}`}
         className="absolute inset-0"
         imgClassName="transition-transform duration-700 ease-editorial group-hover:scale-[1.06]"

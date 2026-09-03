@@ -18,6 +18,7 @@ export const destinations = [
     tags: ['temples', 'gardens', 'tradition', 'food'],
     imageQuery: 'kyoto japan temple autumn',
     imageId: 'photo-1493976040374-85c8e12f0c0e',
+    exploreImageId: 'photo-1478436127897-769e1b3f0f36',
     bestTime: 'March–May and October–November, for cherry blossom and autumn foliage.',
     climate: 'Four distinct seasons; humid summers, mild and dry winters.',
     places: [
@@ -64,6 +65,7 @@ export const destinations = [
     tags: ['art', 'architecture', 'cafés', 'romance'],
     imageQuery: 'paris france eiffel tower',
     imageId: 'photo-1502602898657-3e91760cbb34',
+    exploreImageId: 'photo-1499856871958-5b9627545d1a',
     bestTime: 'April–June and September–October, before peak summer crowds.',
     climate: 'Temperate; mild summers, cool damp winters.',
     places: [
@@ -86,6 +88,7 @@ export const destinations = [
     tags: ['rice terraces', 'surf', 'temples', 'wellness'],
     imageQuery: 'bali rice terrace temple',
     imageId: 'photo-1537996194471-e657df975ab4',
+    exploreImageId: 'photo-1531592937781-344ad608fabf',
     bestTime: 'April–October, the dry season.',
     climate: 'Tropical; warm and humid year-round, with a wet season Nov–March.',
     places: [
@@ -108,6 +111,7 @@ export const destinations = [
     tags: ['ancient history', 'food', 'art'],
     imageQuery: 'rome italy colosseum',
     imageId: 'photo-1552832230-c0197dd311b5',
+    exploreImageId: 'photo-1525874684015-58379d421a52',
     bestTime: 'April–May and September–October, mild and less crowded.',
     climate: 'Mediterranean; hot dry summers, mild wet winters.',
     places: [
@@ -130,6 +134,7 @@ export const destinations = [
     tags: ['mountains', 'coast', 'wine', 'wildlife'],
     imageQuery: 'cape town table mountain',
     imageId: 'photo-1516426122078-c23e76319801',
+    exploreImageId: 'photo-1507699622108-4be3abd695ad',
     bestTime: 'November–March, the dry summer season.',
     climate: 'Mediterranean; warm dry summers, mild wet winters.',
     places: [
@@ -152,6 +157,7 @@ export const destinations = [
     tags: ['bazaars', 'architecture', 'strait crossing'],
     imageQuery: 'istanbul turkey mosque skyline',
     imageId: 'photo-1541432901042-2d8bd64b4a9b',
+    exploreImageId: 'photo-1524231757912-21f4fe3a7200',
     bestTime: 'April–May and September–November, mild and dry.',
     climate: 'Temperate; humid summers, cool wet winters.',
     places: [
@@ -174,6 +180,7 @@ export const destinations = [
     tags: ['skyline', 'museums', 'food', 'nightlife'],
     imageQuery: 'new york city skyline manhattan',
     imageId: 'photo-1496442226666-8d4d0e62e6e9',
+    exploreImageId: 'photo-1534430480872-3498386e7856',
     bestTime: 'April–June and September–November.',
     climate: 'Continental; hot humid summers, cold winters.',
     places: [
@@ -196,6 +203,7 @@ export const destinations = [
     tags: ['desert', 'skyline', 'luxury'],
     imageQuery: 'dubai skyline burj khalifa',
     imageId: 'photo-1512453979798-5ea266f8880c',
+    exploreImageId: 'photo-1451337516015-6b6e9a44a8a3',
     bestTime: 'November–March, mild desert winter.',
     climate: 'Desert; extremely hot summers, warm mild winters.',
     places: [
@@ -218,6 +226,7 @@ export const destinations = [
     tags: ['architecture', 'beach', 'tapas'],
     imageQuery: 'barcelona spain sagrada familia',
     imageId: 'photo-1583422409516-2895a77efded',
+    exploreImageId: 'photo-1548574505-5e239809ee19',
     bestTime: 'May–June and September, warm without peak crowds.',
     climate: 'Mediterranean; hot dry summers, mild winters.',
     places: [
@@ -240,6 +249,7 @@ export const destinations = [
     tags: ['mountains', 'lake', 'adrenaline'],
     imageQuery: 'queenstown new zealand lake mountains',
     imageId: 'photo-1507699622108-4be3abd695ad',
+    exploreImageId: 'photo-1518602164578-cd0074062767',
     bestTime: 'December–February for summer, June–August for skiing.',
     climate: 'Alpine; four distinct seasons, cold snowy winters.',
     places: [

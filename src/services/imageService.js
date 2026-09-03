@@ -18,7 +18,7 @@ function unsplashUrlFromId(id, { w = 1600, h = 2000, fit = 'crop' } = {}) {
  * never shows a broken image.
  */
 export async function getImage(query, fallbackId, opts = {}) {
-  const cacheKey = `${query}-${JSON.stringify(opts)}`;
+  const cacheKey = `${query}-${fallbackId}-${JSON.stringify(opts)}`;
   if (cache.has(cacheKey)) return cache.get(cacheKey);
 
   const fallback = unsplashUrlFromId(fallbackId, opts);
